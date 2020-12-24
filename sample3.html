@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+   #box{
+       height: 300px;
+       width: 300px;
+       background-color: white;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }
+</style>
+<body>
+    <div id="box"><h2>Warning</h2></div>
+        <script>
+            var element=document.querySelector('#box');
+            element.animate([
+                {transform: 'scale(0.5)', background:'white'},
+                {transform: 'scale(1)',background:'red'},
+                {transform: 'scale(0.5)',background:'white'},
+            ],{
+                duration:3000,
+                iterations:Infinity,
+            })
+        </script>
+    
+    
+</body>
+</html>
